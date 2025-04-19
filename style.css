@@ -334,7 +334,6 @@ body.dark-mode .theme-toggle::before {
     width: 100%;
     height: 100%;
     fill: none;
-
     stroke-width: 8;
     stroke: var(--border-color);
     transform: rotate(-90deg);
