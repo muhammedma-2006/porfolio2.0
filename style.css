@@ -465,7 +465,7 @@ body.dark-mode .theme-toggle::before {
     justify-content: center;
     background-color: var(--primary-color);
     color: white;
-    border-radius: 10PX 15PX;
+    border-radius:  10PX 15PX;
     transition: var(--transition);
 }
 
