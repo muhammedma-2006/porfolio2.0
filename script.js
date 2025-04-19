@@ -97,26 +97,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Handle Contact Form Submission
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    // In a real application, you'd send this data to a server
-    // For demo purposes, we'll just log it and show an alert
-    console.log('Form submitted:', { name, email, message });
-    alert(`Thank you, ${name}! Your message has been received. I'll get back to you soon.`);
-    contactForm.reset();
-});
 
 // Initialize Skill Circle Animations
 function initSkillCircles() {
     skillCircles.forEach(circle => {
         const parent = circle.closest('.skill-progress');
-        const percent = parent.getAttribute('data-percent');
-        const circumference = 2 * Math.PI * 30; // r = 30
+        const percent = parseFloat(parent.getAttribute('data-percent'));
+        const radius = circle.r.baseVal.value;
+        console.log('radius');
+        const circumference = 2 * Math.PI * radius; // r = 30
         const offset = circumference - (percent / 100) * circumference;
         
         circle.style.strokeDasharray = `${circumference}`;
