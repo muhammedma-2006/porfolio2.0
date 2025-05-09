@@ -7,7 +7,7 @@ const themeToggle = document.querySelector('.theme-toggle');
 const scrollTopBtn = document.querySelector('.scroll-top');
 const sections = document.querySelectorAll('section');
 const skillCircles = document.querySelectorAll('.skill-circle-fill');
-const contactForm = document.getElementById('contactForm');
+
 
 // Mobile Menu Toggle
 mobileMenuToggle.addEventListener('click', () => {
