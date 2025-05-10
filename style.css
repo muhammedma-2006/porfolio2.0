@@ -425,9 +425,6 @@ body.dark-mode .theme-toggle::before {
     color: white;
 }
 
-
-
-
 /* Contact Section */
 .contact-section {
     background-color: var(--light-bg);
