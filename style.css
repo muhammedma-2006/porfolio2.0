@@ -420,16 +420,13 @@ body.dark-mode .theme-toggle::before {
     border-radius: 4px;
 }
 
-.demo-link {
+.view-link{
     background-color: var(--primary-color);
     color: white;
 }
 
-.code-link {
-    background-color: var(--light-bg);
-    color: var(--text-color);
-    border: 1px solid var(--border-color);
-}
+
+
 
 /* Contact Section */
 .contact-section {
