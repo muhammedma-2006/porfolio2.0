@@ -358,73 +358,7 @@ body.dark-mode .theme-toggle::before {
 }
 
 /* Projects Section */
-/* .projects-grid {
-    display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    
-    gap: 30px;
-}
 
-.project-card {
-    background-color: var(--card-bg);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: var(--transition);
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.project-image {
-    height: 200px;
-    overflow: hidden;
-}
-
-.project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: var(--transition);
-}
-
-.project-card:hover .project-image img {
-    transform: scale(1.1);
-}
-
-.project-info {
-    padding: 20px;
-}
-
-.project-info h3 {
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-.project-info p {
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: var(--text-color);
-    opacity: 0.8;
-}
-
-.project-links {
-    display: flex;
-    gap: 10px;
-}
-
-.project-links a {
-    padding: 8px 15px;
-    font-size: 12px;
-    border-radius: 4px;
-}
-
-.view-link{
-    background-color: var(--primary-color);
-    color: white;
-} */
 .projects-grid{
     display: flex;
     justify-content: center;
