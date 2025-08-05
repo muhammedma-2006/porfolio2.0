@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammed M A - Portfolio</title>
+    <link rel="icon" href="./images/favicon.ico" />
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -31,7 +35,7 @@
         </div>
     </header>
 
-    
+
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="particles"></div>
@@ -125,86 +129,103 @@
 
     <!-- Projects Section -->
     <section id="projects" class="reveal">
-        <div class="container">
+        <div class="container swiper">
             <h2 class="section-heading">My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/project2.png" alt="Project 3">
-                    </div>
-                    <div class="project-info">
-                        <h3>Portfolio Website</h3>
-                        <p>A clean and modern portfolio website developed using HTML, CSS, and JavaScript with smooth animations and responsive design.</p>
-                        <div class="project-links">
-                            <a target="_blank" href="https://muhammedma-2006.github.io/porfolio2.0" class="view-link">VIEW</a>
-                            
+            <div class="card-container">
+                <div class="projects-grid swiper-wrapper">
+                    <div class="project-card swiper-slide">
+                        <div class="project-image">
+                            <img src="./images/project2.png" alt="Project 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Website</h3>
+                            <p>A clean and modern portfolio website developed using HTML, CSS, and JavaScript with smooth animations and responsive design.</p>
+                            <div class="project-links">
+                                <a target="_blank" href="https://muhammedma-2006.github.io/porfolio2.0" class="view-link">VIEW</a>
+                                
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/project1.png" alt="Project 1">
-                    </div>
-                    <div class="project-info">
-                        <h3>HOSTEL REVIEW</h3>
-                        <p>A responsive hostel review website for CUSAT with hostel search, detailed reviews, and user-submitted ratings, built using HTML, CSS, and JavaScript.</p>
-                        <div class="project-links">
-                            <a target="_blank" href="http://muhammedma-2006.github.io/hostelreview" class="view-link">VIEW</a>
-                            
+                    <div class="project-card swiper-slide">
+                        <div class="project-image">
+                            <img src="./images/project1.png" alt="Project 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>HOSTEL REVIEW</h3>
+                            <p>A responsive hostel review website for CUSAT with hostel search, detailed reviews, and user-submitted ratings, built using HTML, CSS, and JavaScript.</p>
+                            <div class="project-links">
+                                <a target="_blank" href="http://muhammedma-2006.github.io/hostelreview" class="view-link">VIEW</a>
+                                
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/project3.png" alt="Project 2">
-                    </div>
-                    <div class="project-info">
-                        <h3>ROCK PAPER SCISSOR GAME</h3>
-                        <p>A simple and interactive Rock Paper Scissors game built with HTML, CSS, and JavaScript. Features real-time score tracking, smooth animations.</p>
-                        <div class="project-links">
-                            <a target="_blank"  href="https://muhammedma-2006.github.io/rockPaperScissor/" class="view-link">VIEW</a>
+                    <div class="project-card swiper-slide">
+                        <div class="project-image">
+                            <img src="./images/project3.png" alt="Project 3">
+                        </div>
+                        <div class="project-info">
+                            <h3>ROCK PAPER SCISSOR</h3>
+                            <p>A simple and interactive Rock Paper Scissors game built with HTML, CSS, and JavaScript. Features real-time score tracking, smooth animations.</p>
+                            <div class="project-links">
+                                <a target="_blank"  href="https://muhammedma-2006.github.io/rockPaperScissor/" class="view-link">VIEW</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/project4.png" alt="Project 2">
-                    </div>
-                    <div class="project-info">
-                        <h3>CALCULATOR</h3>
-                        <p>A fully functional calculator web app built using HTML, CSS, and JavaScript. Supports basic arithmetic operations, real-time input display.</p>
-                        <div class="project-links">
-                            <a target="_blank"  href="https://muhammedma-2006.github.io/calculator/" class="view-link">VIEW</a>
+                    <div class="project-card swiper-slide">
+                        <div class="project-image">
+                            <img src="./images/project4.png" alt="Project 4">
+                        </div>
+                        <div class="project-info">
+                            <h3>CALCULATOR</h3>
+                            <p>A fully functional calculator web app built using HTML, CSS, and JavaScript. Supports basic arithmetic operations, real-time input display.</p>
+                            <div class="project-links">
+                                <a target="_blank"  href="https://muhammedma-2006.github.io/calculator/" class="view-link">VIEW</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/project5.png" alt="Project 1">
-                    </div>
-                    <div class="project-info">
-                        <h3>BUBBLE POP</h3>
-                        <p>BubblePop is an endlessly frustrating bubble-popping site where each bubble instantly respawns, denying you any real satisfaction</p>
-                        <div class="project-links">
-                            <a target="_blank" href="http://muhammedma-2006.github.io/BubblePop" class="view-link">VIEW</a>
-                            
+                    <div class="project-card swiper-slide">
+                        <div class="project-image">
+                            <img src="./images/project5.png" alt="Project 5">
+                        </div>
+                        <div class="project-info">
+                            <h3>BUBBLE POP</h3>
+                            <p>BubblePop is an endlessly frustrating bubble-popping site where each bubble instantly respawns, denying you any real satisfaction</p>
+                            <div class="project-links">
+                                <a target="_blank" href="http://muhammedma-2006.github.io/BubblePop" class="view-link">VIEW</a>
+                                
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/project6.png" alt="Project 1">
-                    </div>
-                    <div class="project-info">
-                        <h3>LOOP CHAT</h3>
-                        <p>LoopChat is a quirky chat app where every message you send returns to you after 5 minutes, creating an endless loop with your past self.</p>
-                        <div class="project-links">
-                            <a target="_blank" href="http://muhammedma-2006.github.io/BubblePop" class="view-link">VIEW</a>
-                            
+                    <div class="project-card swiper-slide">
+                        <div class="project-image">
+                            <img src="./images/project6.png" alt="Project 6">
                         </div>
-                    </div>
+                        <div class="project-info">
+                            <h3>LOOP CHAT</h3>
+                            <p>LoopChat is a quirky chat app where every message you send returns to you after 5 minutes, creating an endless loop with your past self.</p>
+                            <div class="project-links">
+                                <a target="_blank" href="https://muhammedma-2006.github.io/memory_returner" class="view-link">VIEW</a>
+                                
+                            </div>
+                        </div>
+                    </div>    
                 </div>
+               
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
             </div>
+            
+            
+        </div>
+            
+              
+            </div> 
+            
         </div>
     </section>
 
@@ -239,6 +260,8 @@
 
     <!-- Scroll to Top Button -->
     <div class="scroll-top">↑</div>
-
+    <!-- swiper -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
+    <script src="./swiper.js"></script>
 </body>

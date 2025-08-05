@@ -154,6 +154,7 @@ function createParticles() {
     }
 }
 
+
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     createParticles();
@@ -162,3 +163,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Trigger scroll event to set initial states
     window.dispatchEvent(new Event('scroll'));
 });
+
+
