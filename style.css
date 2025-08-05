@@ -363,8 +363,9 @@ body.dark-mode .theme-toggle::before {
     /* display: flex;
     justify-content: center;
     align-items: center;
- */ animation: scroll-left 20s linear infinite  ;
+ */ animation: scroll-left 15s linear infinite;
     gap: 30px;
+    scroll-behavior: smooth;
 }
 @keyframes scroll-left {
   0% {
@@ -372,7 +373,7 @@ body.dark-mode .theme-toggle::before {
   }
   
   100%{
-    transform: translateX(-100%);
+    transform: translateX(-115%);
   }
 }
 .project-card {
@@ -439,15 +440,16 @@ body.dark-mode .theme-toggle::before {
     background-color: var(--primary-color);
     color: white;
 } 
-
-/* Enable horizontal scroll on smaller screens */
-
-
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination{
+    display: none;
+}
 .card-container{
     max-width: 1100px;
     margin: 0 60px 35px;
     padding: 20px 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .card-container .swiper-pagination-bullet{
     height: 13px;
@@ -460,6 +462,7 @@ body.dark-mode .theme-toggle::before {
     opacity: 1;
     
 }
+
 /* Contact Section */
 .contact-section {
     background-color: var(--light-bg);
@@ -634,7 +637,15 @@ footer {
         transition: right 0.3s ease;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     }
-
+    @keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    
+    100%{
+        transform: translateX(-580%);
+    }
+    }
     .nav-links.active {
         right: 0;
     }
