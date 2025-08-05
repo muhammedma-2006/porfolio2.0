@@ -372,12 +372,15 @@ body.dark-mode .theme-toggle::before {
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
+    cursor: pointer;
 }
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
-
+.project-card:active{
+    cursor: grab;
+}
 .project-image {
     height: 200px;
     overflow: hidden;
