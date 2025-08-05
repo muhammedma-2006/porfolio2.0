@@ -363,8 +363,17 @@ body.dark-mode .theme-toggle::before {
     /* display: flex;
     justify-content: center;
     align-items: center;
- */
+ */ animation: scroll-left 40s linear infinite  ;
     gap: 30px;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  
+  100%{
+    transform: translateX(-100%);
+  }
 }
 .project-card {
     background-color: var(--card-bg);
