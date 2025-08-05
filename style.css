@@ -577,7 +577,7 @@ body.dark-mode .theme-toggle::before {
     color: var(--text-color);
     transition: var(--transition);
 }
-
+ 
 .form-control:focus {
     border-color: var(--primary-color);
     box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
