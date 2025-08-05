@@ -1,267 +1,195 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammed M A - Portfolio</title>
-    <link rel="icon" href="./images/favicon.ico" />
-
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <!-- Header & Navigation -->
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#home" class="logo">MUHAMMED M A</a>
-                <div class="mobile-menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul class="nav-links">
-                    <li><a   href="#home" class="active">Home</a></li>
-                    <li><a  href="#about">About</a></li>
-                    <li><a  href="#projects">Projects</a></li>
-                    <li><a target="_blank" href="./Docs/RESUME.pdf">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                   
-                    <li class="theme-toggle "></li>
-
-                </ul>
-            </nav>
-        </div>
-    </header>
+// DOM Elements
+const header = document.querySelector('header');
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+const navItems = document.querySelectorAll('.nav-links a');
+const themeToggle = document.querySelector('.theme-toggle');
+const scrollTopBtn = document.querySelector('.scroll-top');
+const sections = document.querySelectorAll('section');
+const skillCircles = document.querySelectorAll('.skill-circle-fill');
 
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="particles"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1>MUHAMMED M A</h1>
-                <p>Web Developer | Front-end Enthusiast</p>
-                <div class="cta">
-                    <a href="#projects" class="btn">View My Work</a>
-                </div>
-            </div>
-        </div>
-    </section>
+// Mobile Menu Toggle
+mobileMenuToggle.addEventListener('click', () => {
+    mobileMenuToggle.classList.toggle('active');
+    navLinks.classList.toggle('active');
+});
 
-    <!-- About Section -->
-    <section id="about" class="reveal">
-        <div class="container">
-            <h2 class="section-heading">About Me</h2>
-            <div class="about-content">
-                
-                <div class="about-text">
-                    <h3>Hello there, I'm Muhammed</h3>
-                    <p>
-                        I'm a passionate web developer with a focus on creating beautiful, responsive, and user-friendly websites. With expertise in front-end development, I bring ideas to life through clean code and modern design principles.
-                    </p>
-                    <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.
-                    </p>
-                    <div class="skills">
-                        <div class="skill-item">
-                            <div class="skill-progress" data-percent="100">
-                                <svg class="skill-circle" viewBox="0 0 100 100">
-                                    <circle class="skill-circle-fill" cx="50" cy="50" r="30"></circle>
-                                </svg>
-                                <span class="skill-text">100%</span>
-                            </div>
-                            <div class="skill-icon">
-                                <span>HTML</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-progress" data-percent="85">
-                                <svg class="skill-circle" viewBox="0 0 100 100">
-                                    <circle class="skill-circle-fill" cx="50" cy="50" r="30"></circle>
-                                </svg>
-                                <span class="skill-text">85%</span>
-                            </div>
-                            <div class="skill-icon">
-                                <span>CSS</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-progress" data-percent="80">
-                                <svg class="skill-circle" viewBox="0 0 100 100">
-                                    <circle class="skill-circle-fill" cx="50" cy="50" r="30"></circle>
-                                </svg>
-                                <span class="skill-text">80%</span>
-                            </div>
-                            <div class="skill-icon">
-                                <span>JS</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-progress" data-percent="85">
-                                <svg class="skill-circle" viewBox="0 0 100 100">
-                                    <circle class="skill-circle-fill" cx="50" cy="50" r="30"></circle>
-                                </svg>
-                                <span class="skill-text">85%</span>
-                            </div>
-                            <div class="skill-icon">
-                                <span>C Programming</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-progress" data-percent="10">
-                                <svg class="skill-circle" viewBox="0 0 100 100">
-                                    <circle class="skill-circle-fill" cx="50" cy="50" r="30"></circle>
-                                </svg>
-                                <span class="skill-text">25%</span>
-                            </div>
-                            <div class="skill-icon">
-                                <span>REACT</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+// Close mobile menu when clicking on a link
+navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        mobileMenuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
+});
 
-    <!-- Projects Section -->
-    <section id="projects" class="reveal">
-        <div class="container swiper">
-            <h2 class="section-heading">My Projects</h2>
-            <div class="card-container">
-                <div class="projects-grid swiper-wrapper">
-                    <div class="project-card swiper-slide">
-                        <div class="project-image">
-                            <img src="./images/project2.png" alt="Project 1">
-                        </div>
-                        <div class="project-info">
-                            <h3>Portfolio Website</h3>
-                            <p>A clean and modern portfolio website developed using HTML, CSS, and JavaScript with smooth animations and responsive design.</p>
-                            <div class="project-links">
-                                <a target="_blank" href="https://muhammedma-2006.github.io/porfolio2.0" class="view-link">VIEW</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card swiper-slide">
-                        <div class="project-image">
-                            <img src="./images/project1.png" alt="Project 2">
-                        </div>
-                        <div class="project-info">
-                            <h3>HOSTEL REVIEW</h3>
-                            <p>A responsive hostel review website for CUSAT with hostel search, detailed reviews, and user-submitted ratings, built using HTML, CSS, and JavaScript.</p>
-                            <div class="project-links">
-                                <a target="_blank" href="http://muhammedma-2006.github.io/hostelreview" class="view-link">VIEW</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card swiper-slide">
-                        <div class="project-image">
-                            <img src="./images/project3.png" alt="Project 3">
-                        </div>
-                        <div class="project-info">
-                            <h3>ROCK PAPER SCISSOR</h3>
-                            <p>A simple and interactive Rock Paper Scissors game built with HTML, CSS, and JavaScript. Features real-time score tracking, smooth animations.</p>
-                            <div class="project-links">
-                                <a target="_blank"  href="https://muhammedma-2006.github.io/rockPaperScissor/" class="view-link">VIEW</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card swiper-slide">
-                        <div class="project-image">
-                            <img src="./images/project4.png" alt="Project 4">
-                        </div>
-                        <div class="project-info">
-                            <h3>CALCULATOR</h3>
-                            <p>A fully functional calculator web app built using HTML, CSS, and JavaScript. Supports basic arithmetic operations, real-time input display.</p>
-                            <div class="project-links">
-                                <a target="_blank"  href="https://muhammedma-2006.github.io/calculator/" class="view-link">VIEW</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card swiper-slide">
-                        <div class="project-image">
-                            <img src="./images/project5.png" alt="Project 5">
-                        </div>
-                        <div class="project-info">
-                            <h3>BUBBLE POP</h3>
-                            <p>BubblePop is an endlessly frustrating bubble-popping site where each bubble instantly respawns, denying you any real satisfaction</p>
-                            <div class="project-links">
-                                <a target="_blank" href="http://muhammedma-2006.github.io/BubblePop" class="view-link">VIEW</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card swiper-slide">
-                        <div class="project-image">
-                            <img src="./images/project6.png" alt="Project 6">
-                        </div>
-                        <div class="project-info">
-                            <h3>LOOP CHAT</h3>
-                            <p>LoopChat is a quirky chat app where every message you send returns to you after 5 minutes, creating an endless loop with your past self.</p>
-                            <div class="project-links">
-                                <a target="_blank" href="https://muhammedma-2006.github.io/memory_returner" class="view-link">VIEW</a>
-                                
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-               
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+// Theme Toggle
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode'));
+});
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                
-            </div>
-            
-            
-        </div>
-            
-              
-            </div> 
-            
-        </div>
-    </section>
+// Check for saved theme
+if (localStorage.getItem('dark-mode') === 'true') {
+    document.body.classList.add('dark-mode');
+}
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section reveal">
-        <div class="container">
-            <h2 class="section-heading">Contact Me</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <p>Have a project in mind or want to collaborate? Feel free to reach out to me through my social media.</p>
-                    <div class="social-links">
-                        <a target="_blank"  href="https://www.linkedin.com/in/muhammed-m-a-8a8627264/" class="social-link">LINKEDLN</a>
-                        <a target="_blank" href="https://github.com/muhammedma-2006" class="social-link">GITHUB</a>
-                        <a target="_blank" href="https://x.com/MishabMa" class="social-link">TWITTER</a>
-                        <a target="_blank" href="https://www.instagram.com/_mishab_m_a/" class="social-link">INSTAGRAM</a>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
+// Scroll Events
+window.addEventListener('scroll', () => {
+    // Header shadow on scroll
+    if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Muhammed M A. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+    // Scroll to top button visibility
+    if (window.scrollY > 500) {
+        scrollTopBtn.classList.add('visible');
+    } else {
+        scrollTopBtn.classList.remove('visible');
+    }
 
-    <!-- Scroll to Top Button -->
-    <div class="scroll-top">↑</div>
-    <!-- swiper -->
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./script.js"></script>
+    // Active nav link on scroll
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (window.scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navItems.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').substring(1) === current) {
+            link.classList.add('active');
+        }
+    });
+
+    // Reveal animations on scroll
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < window.innerHeight - 150) {
+            section.classList.add('active');
+        }
+    });
+});
+
+// Scroll to Top Button Click
+scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Smooth Scrolling for Navigation Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        const headerHeight = header.offsetHeight;
+        const elementPosition = target.offsetTop;
+        window.scrollTo({
+            top: elementPosition - headerHeight,
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+// Initialize Skill Circle Animations
+function initSkillCircles() {
+    skillCircles.forEach(circle => {
+        const parent = circle.closest('.skill-progress');
+        const percent = parseFloat(parent.getAttribute('data-percent'));
+        const radius = circle.r.baseVal.value;
+        console.log('radius');
+        const circumference = 2 * Math.PI * radius; // r = 30
+        const offset = circumference - (percent / 100) * circumference;
+        
+        circle.style.strokeDasharray = `${circumference}`;
+        circle.style.strokeDashoffset = `${circumference}`;
+        
+        // Add to Intersection Observer for animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        circle.style.strokeDashoffset = offset;
+                    }, 300);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(parent);
+    });
+}
+
+// Create particles for hero background
+function createParticles() {
+    const particlesContainer = document.querySelector('.particles');
+    const particleCount = 20;
     
-</body>
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        
+        // Random position and size
+        const size = Math.random() * 30 + 10;
+        const posX = Math.random() * 100;
+        const posY = Math.random() * 100;
+        const animationDuration = Math.random() * 20 + 5;
+        const animationDelay = Math.random() * 10;
+        
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        particle.style.left = `${posX}%`;
+        particle.style.top = `${posY}%`;
+        particle.style.animationDuration = `${animationDuration}s`;
+        particle.style.animationDelay = `${animationDelay}s`;
+        
+        particlesContainer.appendChild(particle);
+    }
+}
+
+
+// Initialize everything when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    createParticles();
+    initSkillCircles();
+    
+    // Trigger scroll event to set initial states
+    window.dispatchEvent(new Event('scroll'));
+});
+
+
+new Swiper('.card-container', {
+    loop: true,
+    spaceBetween: 30,
+  
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        }
+    }
+});
