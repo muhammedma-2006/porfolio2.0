@@ -598,7 +598,7 @@ footer {
     .about-content {
         flex-direction: column;
     }
-    
+     
     .skills {
         grid-template-columns: repeat(2, 1fr);
     }
