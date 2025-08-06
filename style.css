@@ -366,15 +366,15 @@ body.dark-mode .theme-toggle::before {
     gap: 30px;
     scroll-behavior: smooth;
 }
-@keyframes scroll-left {
+/* @keyframes scroll-left {
   0% {
     transform: translateX(0%);
   }
   
   100%{
     transform: translateX(-115%);
-  }
-}
+  } 
+}*/
 .project-card {
     background-color: var(--card-bg);
     border-radius: 8px;
@@ -439,16 +439,16 @@ body.dark-mode .theme-toggle::before {
     background-color: var(--primary-color);
     color: white;
 } 
-.swiper-button-prev,
+/* .swiper-button-prev,
 .swiper-button-next,
 .swiper-pagination{
     display: none;
-}
+} */
 .card-container{
     max-width: 1100px;
     margin: 0 60px 35px;
     padding: 20px 10px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .card-container .swiper-pagination-bullet{
     height: 13px;
