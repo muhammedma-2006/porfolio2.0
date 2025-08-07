@@ -369,7 +369,7 @@ body.dark-mode .theme-toggle::before {
 /* @keyframes scroll-left {
   0% {
     transform: translateX(0%);
-  }
+  } 
   
   100%{
     transform: translateX(-115%);
