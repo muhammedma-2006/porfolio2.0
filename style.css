@@ -335,6 +335,7 @@ body.dark-mode .theme-toggle::before {
     width: 100%;
     height: 100%;
     fill: none;
+    
     stroke-width: 8;
     stroke: var(--border-color);
     transform: rotate(-90deg);
@@ -345,6 +346,7 @@ body.dark-mode .theme-toggle::before {
 .skill-circle-fill {
     stroke: var(--primary-color);
     transition: stroke-dashoffset 1.5s ease;
+    
 }
 
 .skill-text {
@@ -362,7 +364,7 @@ body.dark-mode .theme-toggle::before {
     /* display: flex;
     justify-content: center;
     align-items: center;
- */ animation: scroll-left 15s linear infinite;
+ */ animation: scroll-left 20s linear infinite;
     gap: 30px;
     scroll-behavior: smooth;
 }
@@ -635,6 +637,15 @@ footer {
         padding: 80px 20px 20px;
         transition: right 0.3s ease;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+    .swiper-button-next,
+    .swiper-button-prev,
+    .swiper-pagination{
+        display: none;
+    }
+    .insta{
+        display: none;
+        
     }
     @keyframes scroll-left {
     0% {
