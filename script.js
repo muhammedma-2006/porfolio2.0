@@ -36,7 +36,7 @@ const projects = [
         alt : "project 4"
     },
     {   title: "STUDENT PORTAL",
-        description: "CUSAT Student Portal — a modern web app to manage student profiles and view internal marks, built with PHP and MySQL.",
+        description: "A responsive PHP-based student portal for CUSAT that lets students register, log in, and view internal marks. Built using HTML, CSS, PHP, and MySQL.",
         Image: "./images/project5.png",
         link : "#",
         alt : "project 5"
