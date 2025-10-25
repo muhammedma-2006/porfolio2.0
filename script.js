@@ -48,7 +48,7 @@ projects.forEach(project=>{
             <h3>${project.title}</h3>
             <p>${project.description}</p>
             <div class="project-links">
-                <a  href="${project.link}" class="view-link">VIEW</a>
+                <a  href="${project.link}" target="_blank" class="view-link">VIEW</a>
                 
             </div>
         </div>
