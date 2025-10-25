@@ -160,6 +160,8 @@ const skills = [
     { name: "React", percent: "60" , percentage : 60 },
     { name: "Node.js", percent: "50" , percentage : 50 },
     { name: "C++", percent: "60" , percentage : 60 },
+    { name: "PHP", percent: "70" , percentage : 70 },
+    { name: "MySQL", percent: "65" , percentage : 65 }
 ];
 
 skills.forEach(skill=>{
