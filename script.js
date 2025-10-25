@@ -6,8 +6,56 @@ const navItems = document.querySelectorAll('.nav-links a');
 const themeToggle = document.querySelector('.theme-toggle');
 const scrollTopBtn = document.querySelector('.scroll-top');
 const sections = document.querySelectorAll('section');
-const skillCircles = document.querySelectorAll('.skill-circle-fill');
 
+
+const container = document.querySelector('.projects-grid');
+
+const projects = [
+    {   title: "Portfolio Website",
+        description: "A clean and modern portfolio website developed using HTML, CSS, and JavaScript with smooth animations and responsive design" , 
+        Image: "./images/project2.png",
+        link : "https://muhammedma-2006.github.io/porfolio2.0",
+        alt : "project 1"
+    },
+    {   title: "HOSTEL REVIEW",
+        description: "A responsive hostel review website for CUSAT with hostel search, detailed reviews, and user-submitted ratings, built using HTML, CSS, and JavaScript",
+        Image: "./images/project1.png",
+        link : "http://muhammedma-2006.github.io/hostelreview",
+        alt : "project 2"
+    },
+    {   title: "ROCK PAPER SCISSOR",
+        description: "A simple and interactive Rock Paper Scissors game built with HTML, CSS, and JavaScript. Features real-time score tracking, smooth animations.",
+        Image: "./images/project3.png",
+        link: "https://muhammedma-2006.github.io/rockPaperScissor/",
+        alt : "project 3"
+    },
+    {   title: "CALCULATOR",
+        description: "A fully functional calculator web app built using HTML, CSS, and JavaScript. Supports basic arithmetic operations, real-time input display.",
+        Image: "./images/project4.png",
+        link :"https://muhammedma-2006.github.io/Calculator/",
+        alt : "project 4"
+    },
+]
+
+projects.forEach(project=>{
+    const projectCard = document.createElement('div');
+    projectCard.classList.add('project-card','swiper-slide');
+    projectCard.innerHTML=`
+        <div class="project-image">
+            <img src="${project.Image}" alt="${project.alt}">
+        </div>
+        <div class="project-info">
+            <h3>${project.title}</h3>
+            <p>${project.description}</p>
+            <div class="project-links">
+                <a  href="${project.link}" class="view-link">VIEW</a>
+                
+            </div>
+        </div>
+    `;
+        
+    container.appendChild(projectCard);
+});
 
 // Mobile Menu Toggle
 mobileMenuToggle.addEventListener('click', () => {
@@ -97,7 +145,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+const SkillCon = document.getElementById('skills');
+const skills = [
+    { name: "HTML", percent: "100" , percentage : 100},
+    { name: "CSS", percent: "85"  , percentage :85},
+    { name: "JavaScript", percent: "80", percentage :80},
+    { name: "C", percent: "85" , percentage : 85},
+    { name: "React", percent: "60" , percentage : 60 },
+    { name: "Node.js", percent: "50" , percentage : 50 },
+    { name: "C++", percent: "60" , percentage : 60 },
+];
 
+skills.forEach(skill=>{
+        const skillProgress = document.createElement('div');
+        skillProgress.classList.add('skill-item');
+        skillProgress.innerHTML = `
+                                <div class="skill-progress" data-percent="${skill.percentage}">
+                                    <svg class="skill-circle" viewBox="0 0 100 100">
+                                        <circle class="skill-circle-fill" cx="50" cy="50" r="30"></circle>
+                                    </svg>
+                                    <span class="skill-text">${skill.percent}%</span>
+                                </div>
+                                <div class="skill-icon">
+                                    <span>${skill.name}</span>
+                                </div>`;
+        SkillCon.appendChild(skillProgress);
+});
+
+const skillCircles = document.querySelectorAll('.skill-circle-fill');
 // Initialize Skill Circle Animations
 function initSkillCircles() {
     skillCircles.forEach(circle => {
