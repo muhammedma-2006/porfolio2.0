@@ -35,6 +35,12 @@ const projects = [
         link :"https://muhammedma-2006.github.io/Calculator/",
         alt : "project 4"
     },
+    {   title: "STUDENT PORTAL",
+        description: "CUSAT Student Portal — a modern web app to manage student profiles and view internal marks, built with PHP and MySQL.",
+        Image: "./images/project5.png",
+        link : "#",
+        alt : "project 5"
+    }
 ]
 
 projects.forEach(project=>{
