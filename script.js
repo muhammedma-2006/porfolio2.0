@@ -17,6 +17,12 @@ const projects = [
         link : "https://muhammedma-2006.github.io/porfolio2.0",
         alt : "project 1"
     },
+    {   title: "STUDENT PORTAL",
+        description: "A responsive PHP-based student portal for CUSAT that lets students register, log in, and view internal marks. Built using HTML, CSS, PHP, and MySQL.",
+        Image: "./images/project5.png",
+        link : "https://muhammedma.infinityfreeapp.com/",
+        alt : "project 5"
+    },
     {   title: "HOSTEL REVIEW",
         description: "A responsive hostel review website for CUSAT with hostel search, detailed reviews, and user-submitted ratings, built using HTML, CSS, and JavaScript",
         Image: "./images/project1.png",
@@ -34,12 +40,6 @@ const projects = [
         Image: "./images/project4.png",
         link :"https://muhammedma-2006.github.io/Calculator/",
         alt : "project 4"
-    },
-    {   title: "STUDENT PORTAL",
-        description: "A responsive PHP-based student portal for CUSAT that lets students register, log in, and view internal marks. Built using HTML, CSS, PHP, and MySQL.",
-        Image: "./images/project5.png",
-        link : "https://muhammedma.infinityfreeapp.com/",
-        alt : "project 5"
     }
 ]
 
