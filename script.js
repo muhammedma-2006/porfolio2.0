@@ -38,7 +38,7 @@ const projects = [
     {   title: "STUDENT PORTAL",
         description: "A responsive PHP-based student portal for CUSAT that lets students register, log in, and view internal marks. Built using HTML, CSS, PHP, and MySQL.",
         Image: "./images/project5.png",
-        link : "#",
+        link : "https://muhammedma.infinityfreeapp.com/",
         alt : "project 5"
     }
 ]
